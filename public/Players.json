@@ -11,23 +11,23 @@
     },
     {
       "playerId": 2,
-      "name": "Pat Cummins",
+      "name": "Steve Smith",
       "country": "Australia",
-      "image": "https://i.ibb.co.com/GVMSVkf/pat-cummins.jpg",
-      "role": "Bowler",
+      "image": "https://i.ibb.co.com/yXQzLC6/steve-smith.jpg",
+      "role": "Batsman",
       "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm fast",
-      "bidding_price": 150000
+      "bowling_type": "Right-arm leg break",
+      "bidding_price": 145000
     },
     {
       "playerId": 3,
-      "name": "Ben Stokes",
-      "country": "England",
-      "image": "https://i.ibb.co.com/dp1RKZg/ben-stokes.jpg",
-      "role": "All-rounder",
-      "batting_type": "Left-hand bat",
-      "bowling_type": "Right-arm fast-medium",
-      "bidding_price": 160000
+      "name": "Kagiso Rabada",
+      "country": "South Africa",
+      "image": "https://i.ibb.co.com/r40wymJ/OIF.jpg",
+      "role": "Bowler",
+      "batting_type": "Right-hand bat",
+      "bowling_type": "Right-arm fast",
+      "bidding_price": 140000
     },
     {
       "playerId": 4,
@@ -71,23 +71,23 @@
     },
     {
       "playerId": 8,
-      "name": "Jofra Archer",
-      "country": "England",
-      "image": "https://i.ibb.co.com/gvyn4QG/jofra-archer.jpg",
-      "role": "Bowler",
+      "name": "Glenn Maxwell",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/8NR9y0g/maxwell.jpg",
+      "role": "All-rounder",
       "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm fast",
-      "bidding_price": 120000
+      "bowling_type": "Right-arm off break",
+      "bidding_price": 145000
     },
     {
       "playerId": 9,
-      "name": "Quinton de Kock",
-      "country": "South Africa",
-      "image": "https://i.ibb.co.com/QrSMmK2/quinton-de-kock.jpg",
-      "role": "Wicketkeeper-Batsman",
-      "batting_type": "Left-hand bat",
-      "bowling_type": "N/A",
-      "bidding_price": 110000
+      "name": "Shane Watson",
+      "country": "Australia",
+      "image": "https://i.ibb.co.com/pww7999/OIP.jpg",
+      "role": "All-rounder",
+      "batting_type": "Right-hand bat",
+      "bowling_type": "Right-arm medium",
+      "bidding_price": 125000
     },
     {
       "playerId": 10,

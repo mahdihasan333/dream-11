@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Players from "./components/Players";
 
@@ -16,6 +16,7 @@ function App() {
       {/* Main Section */}
       <Players></Players>
       {/* Footer Section */}
+      <Footer></Footer>
     </>
   );
 }
