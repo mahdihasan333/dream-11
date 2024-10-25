@@ -1,6 +1,9 @@
 const Footer = () => {
   return (
     <div className="bg-[#06091a] pt-52 pb-8 text-white">
+      <div className="w-11/12 mx-auto border bg-[url('../assets/bg-shadow.png')] bg-no-repeat bg-cover bg-center">
+
+      </div>
       <div className="flex justify-center items-center mb-10">
         <img
           

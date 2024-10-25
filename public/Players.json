@@ -1,103 +1,92 @@
 [
-    {
-      " ": 1,
-      "name": "Virat Kohli",
-      "country": "India",
-      "image": "https://i.ibb.co.com/bv48VyK/virat-kohli.jpg",
-      "role": "Batsman",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm medium",
-      "bidding_price": 170000
-    },
-    {
-      "playerId": 2,
-      "name": "Steve Smith",
-      "country": "Australia",
-      "image": "https://i.ibb.co.com/yXQzLC6/steve-smith.jpg",
-      "role": "Batsman",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm leg break",
-      "bidding_price": 145000
-    },
-    {
-      "playerId": 3,
-      "name": "Kagiso Rabada",
-      "country": "South Africa",
-      "image": "https://i.ibb.co.com/r40wymJ/OIF.jpg",
-      "role": "Bowler",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm fast",
-      "bidding_price": 140000
-    },
-    {
-      "playerId": 4,
-      "name": "David Warner",
-      "country": "Australia",
-      "image": "https://i.ibb.co.com/Nn9YLdS/david-warner.jpg",
-      "role": "Batsman",
-      "batting_type": "Left-hand bat",
-      "bowling_type": "Right-arm leg break",
-      "bidding_price": 125000
-    },
-    {
-      "playerId": 5,
-      "name": "Rashid Khan",
-      "country": "Afghanistan",
-      "image": "https://i.ibb.co.com/XD0zykx/rashid-khan.webp",
-      "role": "Bowler",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm leg spin",
-      "bidding_price": 100000
-    },
-    {
-      "playerId": 6,
-      "name": "Rohit Sharma",
-      "country": "India",
-      "image": "https://i.ibb.co.com/L6rtHmr/rohit-sharma.jpg",
-      "role": "Batsman",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm off break",
-      "bidding_price": 160000
-    },
-    {
-      "playerId": 7,
-      "name": "Kane Williamson",
-      "country": "New Zealand",
-      "image": "https://i.ibb.co.com/X5jFDZt/kane-williamson.jpg",
-      "role": "Batsman",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm off break",
-      "bidding_price": 140000
-    },
-    {
-      "playerId": 8,
-      "name": "Glenn Maxwell",
-      "country": "Australia",
-      "image": "https://i.ibb.co.com/8NR9y0g/maxwell.jpg",
-      "role": "All-rounder",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm off break",
-      "bidding_price": 145000
-    },
-    {
-      "playerId": 9,
-      "name": "Shane Watson",
-      "country": "Australia",
-      "image": "https://i.ibb.co.com/pww7999/OIP.jpg",
-      "role": "All-rounder",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Right-arm medium",
-      "bidding_price": 125000
-    },
-    {
-      "playerId": 10,
-      "name": "Trent Boult",
-      "country": "New Zealand",
-      "image": "https://i.ibb.co.com/ZJ8ZcF4/trent-boult.jpg",
-      "role": "Bowler",
-      "batting_type": "Right-hand bat",
-      "bowling_type": "Left-arm fast-medium",
-      "bidding_price": 130000
-    }
-  ]
-  
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "image": "https://i.ibb.co.com/bv48VyK/virat-kohli.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm medium",
+    "bidding_price": 170000
+  },
+  {
+    "playerId": 2,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/yXQzLC6/steve-smith.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm leg break",
+    "bidding_price": 145000
+  },
+  {
+    "playerId": 3,
+    "name": "David Warner",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/Nn9YLdS/david-warner.jpg",
+    "role": "Batsman",
+    "batting_type": "Left-hand bat",
+    "bowling_type": "Right-arm leg break",
+    "bidding_price": 125000
+  },
+  {
+    "playerId": 4,
+    "name": "Rashid Khan",
+    "country": "Afghanistan",
+    "image": "https://i.ibb.co.com/XD0zykx/rashid-khan.webp",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm leg spin",
+    "bidding_price": 100000
+  },
+  {
+    "playerId": 5,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "image": "https://i.ibb.co.com/L6rtHmr/rohit-sharma.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm off break",
+    "bidding_price": 160000
+  },
+  {
+    "playerId": 6,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/X5jFDZt/kane-williamson.jpg",
+    "role": "Batsman",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm off break",
+    "bidding_price": 140000
+  },
+  {
+    "playerId": 7,
+    "name": "Glenn Maxwell",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/8NR9y0g/maxwell.jpg",
+    "role": "All-rounder",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm off break",
+    "bidding_price": 145000
+  },
+  {
+    "playerId": 8,
+    "name": "Shane Watson",
+    "country": "Australia",
+    "image": "https://i.ibb.co.com/pww7999/OIP.jpg",
+    "role": "All-rounder",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Right-arm medium",
+    "bidding_price": 125000
+  },
+  {
+    "playerId": 9,
+    "name": "Trent Boult",
+    "country": "New Zealand",
+    "image": "https://i.ibb.co.com/ZJ8ZcF4/trent-boult.jpg",
+    "role": "Bowler",
+    "batting_type": "Right-hand bat",
+    "bowling_type": "Left-arm fast-medium",
+    "bidding_price": 130000
+  }
+]
