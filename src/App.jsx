@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Players from "./components/Players";
@@ -8,16 +8,24 @@ function App() {
   // selected player count
   const [selectedPlayer, setSelectedPlayer] = useState(false);
 
+  const [players, setPlayers] = useState([]);
+
+  useEffect(() => {
+    fetch("./Players.json")
+      .then((res) => res.json())
+      .then((data) => setPlayers(data));
+  }, []);
+
   // available button function
   const availablePlayerButton = () => {
     setSelectedPlayer(false);
-    setPlayer(true)
+    setPlayer(true);
   };
 
   // selected button function
   const selectedPlayerButton = () => {
     setSelectedPlayer(true);
-    setPlayer(false)
+    setPlayer(false);
   };
 
   return (
@@ -26,8 +34,13 @@ function App() {
       <Header></Header>
       {/* Main Section */}
       <div>
-        <Players selectedPlayerButton={selectedPlayerButton} availablePlayerButton={availablePlayerButton} player={player} selectedPlayer={selectedPlayer}></Players>
-        
+        <Players
+          selectedPlayerButton={selectedPlayerButton}
+          availablePlayerButton={availablePlayerButton}
+          player={player}
+          selectedPlayer={selectedPlayer}
+          players={players}
+        ></Players>
       </div>
       {/* Footer Section */}
       <Footer></Footer>

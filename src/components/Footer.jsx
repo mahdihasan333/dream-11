@@ -1,17 +1,24 @@
 const Footer = () => {
   return (
     <div className="bg-[#06091a] pt-52 pb-8 text-white">
-      <div className="w-11/12 mx-auto border bg-[url('../assets/bg-shadow.png')] bg-no-repeat bg-cover bg-center">
-
+      <div className="w-11/12 mx-auto border space-y-5 flex justify-center items-center bg-[url('../assets/bg-shadow.png')] bg-no-repeat bg-cover bg-center">
+        <h1>Subscribe to our Newsletter</h1>
+        <p>Get the latest updates and news right in your inbox!</p>
+        <form className="flex">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            className="w-full join-item rounded-lg"
+          />
+          <button className="btn bg-yellow-600 join-item border-none">
+            Subscribe
+          </button>
+        </form>
       </div>
       <div className="flex justify-center items-center mb-10">
-        <img
-          
-          src="../assets/logo-footer.png"
-          alt="logo"
-        />
+        <img src="../assets/logo-footer.png" alt="logo" />
       </div>
-      <footer className="w-11/12 mx-auto grid pb-10 gap-10 grid-cols-1 md:grid-cols-3">
+      <div className="w-11/12 mx-auto grid pb-10 gap-10 grid-cols-1 md:grid-cols-3">
         <div className="space-y-3">
           <h6 className="">About Us</h6>
           <p className="w-full md:w-4/6 ">
@@ -44,7 +51,7 @@ const Footer = () => {
             </button>
           </div>
         </form>
-      </footer>
+      </div>
       <hr />
       <div className="footer text-sm text-white footer-center pt-8">
         <aside>

@@ -9,15 +9,19 @@ const Players = ({
   availablePlayerButton,
   player,
   selectedPlayer,
+  players
 }) => {
-  const [players, setPlayers] = useState([]);
+
+  const {name} = players;
+
+  // const [players, setPlayers] = useState([]);
   const [PlayerCount, setPlayerCount] = useState(0);
 
-  useEffect(() => {
-    fetch("./Players.json")
-      .then((res) => res.json())
-      .then((data) => setPlayers(data));
-  }, []);
+  // useEffect(() => {
+  //   fetch("./Players.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setPlayers(data));
+  // }, []);
 
   const choosePlayerButton = () => {
     const newPlayerCount = PlayerCount + 1;
@@ -25,6 +29,8 @@ const Players = ({
       toast.warn("You can not choose more than 6 players");
     } else {
       setPlayerCount(newPlayerCount);
+      toast.success(`Congratulation!! ${name} is now in your squad`);
+       
     }
   };
 
@@ -55,13 +61,19 @@ const Players = ({
         </div>
       )}
       {selectedPlayer && (
-        <div >
+        <div>
           <h2>Selected Players ({PlayerCount} / 6) </h2>
           <div className="w-11/12 mx-auto">
             {players.map((selected, index) => (
               <SelectedPlayer key={index} selected={selected}></SelectedPlayer>
             ))}
           </div>
+          <button
+            className="bg-yellow-400 px-4 py-2 rounded-2xl"
+            onClick={availablePlayerButton}
+          >
+            Add More Player
+          </button>
         </div>
       )}
     </div>
