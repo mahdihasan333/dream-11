@@ -12,7 +12,7 @@ A fantasy cricket team selection platform allowing users to create Dream 11 team
 - ReactJS Tostify
 
 
-## 3 key features of your project.
+## 3 key features of your project
 
 - Selecting players
 - building a team

@@ -61,7 +61,7 @@ function App() {
   };
 
   const navbarCoinRemove = (id) => {
-    const newCoin = setCoin - id ;
+    const newCoin = coin - id ;
     setCoin(newCoin);
   };
 
@@ -82,7 +82,7 @@ function App() {
       );
       console.log(newCount);
       setCount(newCount);
-      toast.warning(`${player.name} removed from your squad`);
+      toast.warning(`player removed from your squad`);
       return;
     }
   };
