@@ -1,20 +1,7 @@
 const Footer = () => {
   return (
-    <div className="bg-[#06091a] pt-52 pb-8 text-white">
-      <div className="w-11/12 mx-auto border space-y-5 flex justify-center items-center bg-[url('../assets/bg-shadow.png')] bg-no-repeat bg-cover bg-center">
-        <h1>Subscribe to our Newsletter</h1>
-        <p>Get the latest updates and news right in your inbox!</p>
-        <form className="flex">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="w-full join-item rounded-lg"
-          />
-          <button className="btn bg-yellow-600 join-item border-none">
-            Subscribe
-          </button>
-        </form>
-      </div>
+    <div className="bg-[#06091a] pt-72 pb-8  text-white relative z-5">
+      
       <div className="flex justify-center items-center mb-10">
         <img src="../assets/logo-footer.png" alt="logo" />
       </div>

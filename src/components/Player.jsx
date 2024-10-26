@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
-const Player = ({ player, choosePlayerButton, count }) => {
+const Player = ({ player, choosePlayerButton, navbarCoinRemove }) => {
   const {
-    playerId,
     name,
     country,
     image,
@@ -13,7 +12,6 @@ const Player = ({ player, choosePlayerButton, count }) => {
   } = player;
   return (
     <div className="mb-10">
-      
       <div className="card border-2">
         <div className="h-56 w-full object-cover">
           <img src={image} className="h-full p-4 w-full" alt="Players" />
@@ -31,17 +29,19 @@ const Player = ({ player, choosePlayerButton, count }) => {
           <hr />
           <div className="card-actions">
             <p>Rating</p>
-            <div className="font-sm flex items-center gap-8">
+            <div className="font-sm flex items-center justify-between">
               <p>{batting_type}</p>
               <p>{bowling_type}</p>
             </div>
-            <div className="flex text-sm items-center gap-14 justify-between">
+            <div className="flex text-sm items-center justify-between">
               <h4>Price: ${bidding_price}</h4>
-              <button onClick={() => choosePlayerButton(player)} className="btn py-1 px-2 bg-transparent hover:bg-yellow-600">
+              <button
+                onClick={() => {choosePlayerButton(player);
+                  navbarCoinRemove(bidding_price);
+                }}
+                className="btn py-1 px-2 bg-transparent hover:bg-yellow-600"
+              >
                 Choose Player
-                
-                
-                {/* alert.error: player already selected */}
               </button>
             </div>
           </div>

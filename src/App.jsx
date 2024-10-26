@@ -7,6 +7,14 @@ import { toast } from "react-toastify";
 function App() {
   // all data
   const [allPlayer, setAllPlayers] = useState([]);
+  const [playerSelected, setPlayerSelected] = useState([]);
+  const [coin, setCoin] = useState(0);
+  const [player, setPlayer] = useState(true);
+  const [selectedPlayer, setSelectedPlayer] = useState(false);
+  const [PlayerCount, setPlayerCount] = useState(0);
+  const [removeCoin, setRemoveCoin] = useState(0);
+
+  const [count, setCount] = useState([]);
 
   useEffect(() => {
     fetch("./Players.json")
@@ -14,31 +22,16 @@ function App() {
       .then((data) => setAllPlayers(data));
   }, []);
 
-  const [playerSelected, setPlayerSelected] = useState([]);
-  const [coin, setCoin] = useState(0);
-
-  const [player, setPlayer] = useState(true);
-  // selected player count
-  const [selectedPlayer, setSelectedPlayer] = useState(false);
-  // onClick useStare for available player button
-
-  // available button function
   const availablePlayerButton = () => {
     setSelectedPlayer(false);
     setPlayer(true);
   };
 
-  // selected button function
   const selectedPlayerButton = () => {
     setSelectedPlayer(true);
     setPlayer(false);
   };
 
-  const [PlayerCount, setPlayerCount] = useState(0);
-
-  const [count, setCount] = useState([]);
-
-  // choose player function
   const choosePlayerButton = (player) => {
     if (coin === 0) {
       return toast.warn(
@@ -67,7 +60,10 @@ function App() {
     }
   };
 
-  //
+  const navbarCoinRemove = (id) => {
+    const newCoin = setCoin - id ;
+    setCoin(newCoin);
+  };
 
   const AddCoin = () => {
     const newCoin = coin + 600000;
@@ -108,6 +104,8 @@ function App() {
           count={count}
           playerSelected={playerSelected}
           handleDelete={handleDelete}
+          navbarCoinRemove={navbarCoinRemove}
+          removeCoin={removeCoin}
         ></Players>
       </div>
       {/* Footer Section */}

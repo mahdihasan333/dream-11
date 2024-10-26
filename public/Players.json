@@ -78,15 +78,5 @@
     "batting_type": "Right-hand bat",
     "bowling_type": "Right-arm medium",
     "bidding_price": 125000
-  },
-  {
-    "playerId": 9,
-    "name": "Trent Boult",
-    "country": "New Zealand",
-    "image": "https://i.ibb.co.com/ZJ8ZcF4/trent-boult.jpg",
-    "role": "Bowler",
-    "batting_type": "Right-hand bat",
-    "bowling_type": "Left-arm fast-medium",
-    "bidding_price": 130000
   }
 ]
