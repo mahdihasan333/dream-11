@@ -41,7 +41,7 @@ const Header = ({ AddCoin, coin }) => {
 
       {/* banner section */}
       <div className="border bg-black bg-[url(../assets/bg-shadow.png)] rounded-lg">
-        <div className=" flex flex-col justify-center items-center space-y-4 p-8">
+        <div className="text-white flex flex-col justify-center items-center space-y-4 p-8">
           <img src="../assets/banner-main.png" alt="logo" />
           <h2>Assemble Your Ultimate Dream 11 Cricket Team </h2>
           <h4>Beyond Boundaries Beyond Limits</h4>
