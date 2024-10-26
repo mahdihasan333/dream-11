@@ -1,20 +1,14 @@
 import { toast } from "react-toastify";
 import { useState } from "react";
 
-const Header = () => {
+const Header = ({AddCoin, coin}) => {
 
-  const [coin, setCoin] = useState(0)
-
-  const AddCoin = () => {
-    const newCoin = coin + 600000;
-    setCoin(newCoin);
-    toast.success('Credit Added to your account');
-  }
+  
 
   return (
     <div className="w-11/12 mx-auto">
       {/* navbar section */}
-      <div className="navbar my-5 flex justify-between items-center sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-50">
+      <div className="navbar z-50 my-5 flex bg-white justify-between items-center sticky top-0 backdrop-filter backdrop-blur-lg bg-opacity-50">
         <div className="">
           <div className="bg-contain">
             <img

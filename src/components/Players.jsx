@@ -8,41 +8,22 @@ const Players = ({
   selectedPlayerButton,
   availablePlayerButton,
   player,
+  handleDelete,
   selectedPlayer,
-  players
+  allPlayer,
+  choosePlayerButton,
+  PlayerCount,
+  count
 }) => {
-
-  const {name} = players;
-
-  // const [players, setPlayers] = useState([]);
-  const [PlayerCount, setPlayerCount] = useState(0);
-
-  // useEffect(() => {
-  //   fetch("./Players.json")
-  //     .then((res) => res.json())
-  //     .then((data) => setPlayers(data));
-  // }, []);
-
-  const choosePlayerButton = () => {
-    const newPlayerCount = PlayerCount + 1;
-    if (newPlayerCount > 6) {
-      toast.warn("You can not choose more than 6 players");
-    } else {
-      setPlayerCount(newPlayerCount);
-      toast.success(`Congratulation!! ${name} is now in your squad`);
-       
-    }
-  };
-
   return (
-    <div className="w-11/12 mx-auto">
+    <div className="w-11/12 mx-auto z-5">
       <div className="text-right my-10">
         <div>
           <button onClick={availablePlayerButton} className="btn join-item">
             Available
           </button>
           <button onClick={selectedPlayerButton} className="btn join-item">
-            Selected({PlayerCount})
+            Selected({count.length})
           </button>
         </div>
       </div>
@@ -50,7 +31,7 @@ const Players = ({
         <div className="">
           <h2>Available Players</h2>
           <div className="w-11/12 mx-auto grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {players.map((player, index) => (
+            {allPlayer.map((player, index) => (
               <Player
                 key={index}
                 player={player}
@@ -62,10 +43,15 @@ const Players = ({
       )}
       {selectedPlayer && (
         <div>
-          <h2>Selected Players ({PlayerCount} / 6) </h2>
+          <h2>Selected Players ({count.length} / 6) </h2>
           <div className="w-11/12 mx-auto">
-            {players.map((selected, index) => (
-              <SelectedPlayer key={index} selected={selected}></SelectedPlayer>
+            {count.map((selected, index) => (
+              <SelectedPlayer
+                key={index}
+                selected={selected}
+                choosePlayerButton={choosePlayerButton}
+                handleDelete={handleDelete}
+              ></SelectedPlayer>
             ))}
           </div>
           <button

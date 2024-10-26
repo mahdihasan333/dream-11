@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
-const Player = ({ player, choosePlayerButton }) => {
+const Player = ({ player, choosePlayerButton, count }) => {
   const {
     playerId,
     name,
@@ -37,10 +37,10 @@ const Player = ({ player, choosePlayerButton }) => {
             </div>
             <div className="flex text-sm items-center gap-14 justify-between">
               <h4>Price: ${bidding_price}</h4>
-              <button onClick={() => choosePlayerButton(playerId)} className="btn py-1 px-2 bg-transparent hover:bg-yellow-600">
+              <button onClick={() => choosePlayerButton(player)} className="btn py-1 px-2 bg-transparent hover:bg-yellow-600">
                 Choose Player
-                {/* alert.error: Not enough money to buy this player. claim some credit*/}
-                {/* alert.success: Congratulation!! player name is now in your squad*/}
+                
+                
                 {/* alert.error: player already selected */}
               </button>
             </div>
