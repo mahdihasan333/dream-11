@@ -1,22 +1,30 @@
 # BPL DREAM 11
 
-
 A fantasy cricket team selection platform allowing users to create Dream 11 teams, view player stats, manage selections, claim credits, and subscribe for updates. Features intuitive navigation and player management tools.
 
+## Project Preview
 
-## Technologies used
+![Project Preview](https://i.ibb.co.com/23jtvhjQ/Screenshot-2025-02-06-at-5-37-36-PM.png)
+
+## Technologies Used
 
 - React JS
 - Tailwind CSS
 - DaisyUI
-- ReactJS Tostify
+- ReactJS Toastify
 
-
-## 3 key features of your project
+## Key Features
 
 - Selecting players
-- building a team
+- Building a team
 - Claiming credits
-- Deleting Selected Players
+- Deleting selected players
 
+## Installation Guide
 
+Follow these steps to set up the project locally:
+
+### **1️⃣ Clone the repository**
+```bash
+git clone https://github.com/your-username/BPL-Dream-11.git
+cd BPL-Dream-11
